@@ -43,3 +43,5 @@ class TasksController < ApplicationController
     params.require(:task).permit(:title)
   end
 end
+
+#コントローラーとviewはrailsのソースファイルに書かれた何かによってつながっている
