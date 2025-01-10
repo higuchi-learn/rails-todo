@@ -1,15 +1,2 @@
 <h1>New</h1>
-<%= form_with model: @task do |form| %>
-<p>
-    <%= form.label :title %><br>
-    <%= form.text_field :title %>
-    <% if @task.errors.any? %>
-    <!-- 何かしらのエラーがあった場合ture -->
-    <%= @task.errors.messages[:title][0] %>
-    <!-- @task.errors.messagesにエラーメッセージが格納されている -->
-    <% end %>
-</p>
-<p>
-    <%= form.submit %>
-</p>
-<% end %>
+<%= render partial: "form" %>
